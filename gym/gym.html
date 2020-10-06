@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ fitness</title>
+    <link rel="stylesheet" href="gym.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left col">
+        <img
+          src="https://cdn3.f-cdn.com/contestentries/1130865/9360464/59bbb13bdfd23_thumb900.jpg"
+          alt="logo"
+          width="60%"
+        />
+      </div>
+
+      <div class="middle col">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Fitness Calculator</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="right col">
+        <button>Call Us Now</button>
+        <button>Email Us</button>
+      </div>
+    </header>
+    <div class="container col">
+      <h2>Join the best gym of pakistan Now</h2>
+      <form action="" method="POST">
+        <div>
+          <input type="text" name="name" id="" placeholder="Enter your Name" />
+        </div>
+        <div>
+          <input type="number" name="age" id="" placeholder="Enter your Age" />
+        </div>
+        <div>
+          <input type="text" name="gender" placeholder="Enter your Gender" />
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Enter Your Email Id" />
+        </div>
+
+
+        <div>
+          <input
+            type="number" name="number"placeholder="Enter your Phone Number"
+          />
+        </div>
+
+        <div>
+          <button>Submit Now</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!--<?php
+        $pdo=new PDO("mysql:host=localhost;port=3306;dbname=people","fred","zap");
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         if(isset($_POST["name"]) && isset($_POST["age"]) && isset($_POST["gender"]) && isset($_POST["email"]) && isset($_POST["number"])){
+             $sql="INSERT INTO users (name,age,gender,email,number) VALUES (:name,:age,:gender,:email,:number)";
+             $stmt=$pdo->prepare($sql);
+             $stmt->execute(array(
+                 ":name" => $_POST['name'],
+                 ":age" => $_POST['age'],
+                 ":gender" => $_POST['gender'],
+                 ":email" => $_POST['email'],
+                 ":number" => $_POST['number'],
+             ));
+         }
+
+        ?>-->
